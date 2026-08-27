@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>도서 상세 | 밀리의서재</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/detail.css">
+</head>
+
+<body>
+  <!-- =========================
+       상단 노란 띠
+  ========================== -->
+
+  <div class="subscribe-bar">
+    지금 <strong>구독 시작</strong>하고
+    책을 바로 읽어보세요 〉
+  </div>
+
+  <!--===========================
+       Header
+  ============================-->
+  <div id="header"></div>
+
+
+  <!-- =========================
+       상세 상단
+  ========================== -->
+
+  <main class="detail-page">
+
+    <!-- 왼쪽 책 -->
+
+    <section class="detail-cover-area">
+
+      <div class="cover-wrap">
+
+        <img
+          id="detail-cover"
+          src=""
+          alt="책 표지"
+        >
+
+      </div>
+
+
+      <div class="book-types">
+
+        <button class="book-type active">
+          <span>▣</span>
+          전자책
+        </button>
+
+        <button class="book-type">
+          <span>◉</span>
+          오디오북
+        </button>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 오른쪽 정보 -->
+
+    <section class="detail-info">
+
+
+      <div class="detail-info-top">
+
+
+        <h1 id="detail-title">
+          책 제목
+        </h1>
+
+
+        <h3 id="detail-author">
+          저자
+        </h3>
+
+
+        <div class="detail-meta">
+
+          <span class="star">
+            ★
+          </span>
+
+          <span>
+            4.5
+          </span>
+
+          <span>·</span>
+
+          <span>
+            북다
+          </span>
+
+          <span>·</span>
+
+          <span>
+            소설
+          </span>
+
+          <span>·</span>
+
+          <span id="detail-date">
+            2026.07.22
+          </span>
+
+        </div>
+
+      </div>
+
+
+
+<!-- 서재 정보 -->
+
+<div class="shelf-info">
+
+  <!-- 왼쪽 글씨 -->
+  <p class="shelf-text">
+    이 책이 담긴 서재
+    <strong>4.7만+</strong>
+  </p>
+
+
+  <!-- 오른쪽 아이콘 -->
+  <div class="round-buttons">
+
+    <button class="round-btn" aria-label="편집">
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M12 20h9" />
+        <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4Z" />
+      </svg>
+
+    </button>
+
+
+    <button class="round-btn" aria-label="새 창 열기">
+
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M14 3h7v7" />
+        <path d="M10 14 21 3" />
+        <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5" />
+      </svg>
+
+    </button>
+
+  </div>
+
+</div>
+
+
+      <!-- 하단 버튼 -->
+
+      <div class="detail-buttons">
+
+        <button class="read-btn">
+          바로 읽기
+        </button>
+
+       <button class="save-btn">
+
+  <svg
+    class="save-icon"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.7"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    aria-hidden="true"
+  >
+    <!-- 책장/서재 느낌 -->
+    <path d="M4 5.5v13" />
+    <path d="M8 5.5v13" />
+    <path d="M4 18.5h13" />
+
+    <!-- 책 -->
+    <rect x="13" y="5" width="6" height="8" rx="1"></rect>
+
+    <!-- 아래 화살표 -->
+    <path d="M16 14.5v4" />
+    <path d="M14.5 17l1.5 1.5L17.5 17" />
+  </svg>
+
+  <span>내서재에 담기</span>
+
+</button>
+
+        <button class="heart-btn">
+          ♡
+        </button>
+
+      </div>
+
+
+    </section>
+
+  </main>
+
+<!-- =========================
+     상세 하단 콘텐츠
+========================= -->
+
+<section class="detail-content-layout">
+
+
+  <!-- =========================
+       왼쪽 콘텐츠
+  ========================== -->
+
+  <div class="detail-main-content">
+
+
+    <!-- 베스트 랭킹 -->
+
+    <div class="ranking-badge">
+      <span class="ranking-icon">♕</span>
+
+      <strong>
+        밀리 랭킹 소설 분야 주간 베스트 1위
+      </strong>
+    </div>
+
+
+
+    <!-- 인기 분포 -->
+
+    <section class="reader-section">
+
+      <h2>
+        성별 · 연령별 인기 분포
+      </h2>
+
+
+      <div class="reader-grid">
+
+
+        <!-- 왼쪽 그래프 -->
+
+        <div class="age-chart">
+
+
+          <!-- 10대 -->
+          <div class="age-row">
+
+            <div class="male-side">
+              <span>0.8</span>
+              <div
+                class="male-bar"
+                style="width: 8px;"
+              ></div>
+            </div>
+
+            <strong>10대</strong>
+
+            <div class="female-side">
+              <div
+                class="female-bar"
+                style="width: 5px;"
+              ></div>
+              <span>2</span>
+            </div>
+
+          </div>
+
+
+          <!-- 20대 -->
+          <div class="age-row">
+
+            <div class="male-side">
+              <span>5.8</span>
+              <div
+                class="male-bar"
+                style="width: 20px;"
+              ></div>
+            </div>
+
+            <strong>20대</strong>
+
+            <div class="female-side">
+              <div
+                class="female-bar"
+                style="width: 30px;"
+              ></div>
+              <span>14.3</span>
+            </div>
+
+          </div>
+
+
+          <!-- 30대 -->
+          <div class="age-row">
+
+            <div class="male-side">
+              <span>10.6</span>
+              <div
+                class="male-bar"
+                style="width: 38px;"
+              ></div>
+            </div>
+
+            <strong>30대</strong>
+
+            <div class="female-side">
+              <div
+                class="female-bar"
+                style="width: 52px;"
+              ></div>
+              <span>20.8</span>
+            </div>
+
+          </div>
+
+
+          <!-- 40대 -->
+          <div class="age-row">
+
+            <div class="male-side">
+              <span>11.7</span>
+              <div
+                class="male-bar"
+                style="width: 43px;"
+              ></div>
+            </div>
+
+            <strong>40대</strong>
+
+            <div class="female-side">
+              <div
+                class="female-bar"
+                style="width: 43px;"
+              ></div>
+              <span>17.2</span>
+            </div>
+
+          </div>
+
+
+          <!-- 50대 -->
+          <div class="age-row">
+
+            <div class="male-side">
+              <span>5.9</span>
+              <div
+                class="male-bar"
+                style="width: 21px;"
+              ></div>
+            </div>
+
+            <strong>50대</strong>
+
+            <div class="female-side">
+              <div
+                class="female-bar"
+                style="width: 18px;"
+              ></div>
+              <span>6.9</span>
+            </div>
+
+          </div>
+
+
+          <!-- 60대 -->
+          <div class="age-row">
+
+            <div class="male-side">
+              <span>1.6</span>
+              <div
+                class="male-bar"
+                style="width: 8px;"
+              ></div>
+            </div>
+
+            <strong>60대~</strong>
+
+            <div class="female-side">
+              <div
+                class="female-bar"
+                style="width: 7px;"
+              ></div>
+              <span>1.7</span>
+            </div>
+
+          </div>
+
+
+          <!-- 범례 -->
+
+          <div class="chart-legend">
+
+            <span>
+              <i class="male-dot"></i>
+              남성
+            </span>
+
+            <span>
+              <i class="female-dot"></i>
+              여성
+            </span>
+
+            <span>
+              (단위: %)
+            </span>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- 오른쪽 -->
+
+        <div class="reader-summary">
+
+
+          <div class="favorite-members">
+
+            <p>
+              이 책을 서재에 가장 많이 담은 회원
+            </p>
+
+            <div>
+              <strong>1위</strong>
+              30대 여성
+
+              <strong>2위</strong>
+              40대 여성
+            </div>
+
+          </div>
+
+
+          <div class="reader-comment">
+
+            <strong>
+              소설 분야는 20대 여성이 가장 즐겨 보는데,
+            </strong>
+
+            <p>
+              이 책은
+              <b>30대 여성이</b>
+              많이 보고 있어요
+            </p>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- 스크롤 확인용 내용 -->
+
+<nav class="detail-tabs">
+
+  <button
+    class="detail-tab active"
+    data-target="recommend-area"
+  >
+    책 추천
+  </button>
+
+  <button
+    class="detail-tab"
+    data-target="intro-area"
+  >
+    책 소개
+  </button>
+
+  <button
+    class="detail-tab"
+    data-target="review-area"
+  >
+    리뷰 500
+  </button>
+
+</nav>
+
+
+<!-- =========================
+     스크롤되는 상세 콘텐츠
+========================= -->
+
+<div class="detail-demo-content">
+
+
+  <!-- =========================
+       밀리 완독지수
+  ========================== -->
+
+  <section
+  class="completion-section"
+  id="recommend-area"
+>
+
+    <h2>밀리 완독지수</h2>
+
+    <div class="completion-wrap">
+
+      <!-- 왼쪽 그래프 -->
+      <div class="completion-chart">
+
+        <div class="chart-quadrant">
+
+          <span class="quad quad-top-left">
+            홀릭
+          </span>
+
+          <span class="quad quad-top-right">
+            밀리 픽
+          </span>
+
+          <span class="quad quad-bottom-left">
+            히든
+          </span>
+
+          <span class="quad quad-bottom-right">
+            마니아
+          </span>
+
+
+          <div class="chart-line-x"></div>
+          <div class="chart-line-y"></div>
+
+
+          <div class="book-position"></div>
+
+        </div>
+
+
+        <span class="axis-y">
+          완독할 확률(%)
+        </span>
+
+        <span class="axis-y-top">
+          높음
+        </span>
+
+        <span class="axis-y-bottom">
+          낮음
+        </span>
+
+
+        <div class="axis-x">
+
+          <span>낮음</span>
+
+          <span>
+            완독 예상 시간(분)
+          </span>
+
+          <span>높음</span>
+
+        </div>
+
+      </div>
+
+
+      <!-- 오른쪽 설명 -->
+      <div class="completion-info">
+
+        <div class="pick-box">
+
+          <h3>
+            밀리 픽
+            <span>| 소설 분야 평균 대비</span>
+          </h3>
+
+          <p>
+            완독할 확률
+            <strong>67%</strong>
+            <span>| 평균 66% 대비 ▲</span>
+          </p>
+
+          <p>
+            완독 예상 시간
+            <strong>293분</strong>
+            <span>| 평균 165분 대비 ▲</span>
+          </p>
+
+        </div>
+
+
+        <div class="completion-types">
+
+          <p>
+            <strong>홀릭</strong>
+            부담없이 술술 읽다보면 빠져드는 책
+          </p>
+
+          <p>
+            <strong>밀리 픽</strong>
+            밀리 회원들이 검증한 후회 없는 책
+          </p>
+
+          <p>
+            <strong>히든</strong>
+            밀리 회원들의 발견을 기다리고 있는 책
+          </p>
+
+          <p>
+            <strong>마니아</strong>
+            마니아들이 푹 빠진 읽을수록 보람 있는 책
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="completion-legend">
+
+      <span class="legend-point"></span>
+
+      <strong>밀리 픽</strong>
+
+      <span>
+        밀리 회원들이 검증한 후회 없는 책
+      </span>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =========================
+       한 줄 추천
+  ========================== -->
+
+  <section class="recommend-copy">
+
+    <p>
+      드디어 밝혀지는 비밀!
+    </p>
+
+    <strong>
+      탐정 갈릴레오 그 열 번째 이야기
+    </strong>
+
+  </section>
+
+
+
+  <!-- =========================
+       책 소개
+  ========================== -->
+
+  <section
+  class="book-intro"
+  id="intro-area"
+>
+
+    <h2>책 소개</h2>
+
+    <p id="detail-description">
+      책 소개를 불러오는 중입니다.
+    </p>
+
+    <button class="intro-more">
+      책 소개 더보기⌄
+    </button>
+
+  </section>
+
+<!-- =========================
+     목차
+========================= -->
+
+<section class="detail-text-section">
+
+  <h2>목차</h2>
+
+  <div class="toc-content">
+    <p>투명한 나선</p>
+    <p>특별단편 점제다</p>
+    <p>옮긴이의 글</p>
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     저자 소개
+========================= -->
+
+<section class="detail-text-section">
+
+  <h2>저자 소개</h2>
+
+  <p class="detail-long-text">
+    오늘의 일본을 대표하는 작가. 1958년 오사카 출생.
+    오사카 부립대학 졸업 후 엔지니어로 일하며 틈틈이 소설을 쓰다
+    전업 작가의 길로 들어섰다. 다양한 작품으로 일본 주요 문학상을
+    수상하며 대중성과 작품성을 모두 인정받았다.
+  </p>
+
+  <button class="detail-more-btn">
+    저자 소개 더보기⌄
+  </button>
+
+</section>
+
+
+
+<!-- =========================
+     출판사 서평
+========================= -->
+
+<section class="detail-text-section">
+
+  <h2>출판사 서평</h2>
+
+  <div class="publisher-review">
+
+    <p class="review-stars">
+      ★★★★★ <span>도합 종합 1위</span>
+    </p>
+
+    <p>
+      ◆ 천재 물리학자가 평생 숨겨 온 비밀
+    </p>
+
+    <p>
+      “유카와 마나부, 너의 죄를 사하노라!”
+    </p>
+
+  </div>
+
+  <button class="detail-more-btn">
+    출판사 서평 더보기⌄
+  </button>
+
+</section>
+
+
+
+<!-- =========================
+     책 정보
+========================= -->
+
+<section class="book-information">
+
+  <h2>책 정보</h2>
+
+  <div class="book-info-grid">
+
+
+    <div class="book-info-item">
+      <span>카테고리</span>
+      <strong>소설</strong>
+    </div>
+
+
+    <div class="book-info-item">
+      <span>페이지</span>
+      <strong>412P</strong>
+    </div>
+
+
+    <div class="book-info-item">
+      <span>용량</span>
+      <strong>16.0 MB</strong>
+    </div>
+
+
+    <div class="book-info-item">
+      <span>출판사</span>
+      <strong id="info-publisher">-</strong>
+    </div>
+
+
+    <div class="book-info-item">
+      <span>종이책 출간일</span>
+      <strong id="info-publish-date">-</strong>
+    </div>
+
+
+    <div class="book-info-item">
+      <span>전자책 출간일</span>
+      <strong id="info-ebook-date">-</strong>
+    </div>
+
+
+    <div class="book-info-item">
+      <span>ISBN/UCI</span>
+      <strong id="info-isbn">-</strong>
+    </div>
+
+
+  </div>
+
+</section>
+<!-- =========================
+     리뷰 섹션
+========================= -->
+
+<section
+  class="review-section"
+  id="review-area"
+>
+
+  <div class="review-title-row">
+    <h2>한 줄 리뷰 501</h2>
+    <button class="review-more-btn">〉</button>
+  </div>
+
+
+  <!-- 평점 요약 -->
+  <div class="review-summary">
+
+    <div class="review-score-box">
+
+      <div class="review-stars-big">
+        ★★★★<span>★</span>
+      </div>
+
+      <div class="review-score-number">
+        4.5
+      </div>
+
+    </div>
+
+
+    <div class="review-bars">
+
+      <div class="review-bar-row">
+        <span>5점</span>
+        <div class="bar-track">
+          <div class="bar-fill w-75"></div>
+        </div>
+      </div>
+
+      <div class="review-bar-row">
+        <span>4점</span>
+        <div class="bar-track">
+          <div class="bar-fill w-40"></div>
+        </div>
+      </div>
+
+      <div class="review-bar-row">
+        <span>3점</span>
+        <div class="bar-track">
+          <div class="bar-fill w-12"></div>
+        </div>
+      </div>
+
+      <div class="review-bar-row">
+        <span>2점</span>
+        <div class="bar-track">
+          <div class="bar-fill w-3"></div>
+        </div>
+      </div>
+
+      <div class="review-bar-row">
+        <span>1점</span>
+        <div class="bar-track">
+          <div class="bar-fill w-1"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- 리뷰 쓰기 안내 -->
+  <div class="review-write-box">
+
+    <div class="review-write-stars">
+      ★★★★★
+    </div>
+
+    <p>
+      이 책은 어떠셨나요? 별점을 남겨주세요
+    </p>
+
+  </div>
+
+
+  <!-- 리뷰 목록 -->
+  <div class="review-list" id="review-list">
+    <!-- JS로 생성 -->
+  </div>
+
+</section>
+
+<!-- =========================
+     작가 배너
+========================= -->
+
+<section class="author-banner">
+
+  <div class="author-banner-text">
+
+    <h3>
+      히가시노 게이고 《투명한 나선》
+    </h3>
+
+    <p>
+      갈릴레오 시리즈의 새로운 전환점
+    </p>
+
+  </div>
+
+  <img
+    id="author-banner-cover"
+    src=""
+    alt="책 표지"
+  >
+
+</section>
+
+
+
+<!-- =========================
+     이 책의 포스트
+========================= -->
+
+<section class="book-post-section">
+
+  <div class="detail-section-title">
+
+    <h2>이 책의 포스트</h2>
+
+    <button class="post-next">
+      〉
+    </button>
+
+  </div>
+
+
+  <div class="book-post-list">
+
+
+    <!-- 1 -->
+    <article class="book-post-card">
+
+      <h3>
+        투명한 나선
+      </h3>
+
+      <p>
+        지나던 바다에서 발견된 총상 남성 시신과
+        실종된 동거 여성의 사건을 다루며 수면 아래
+        유카와 미나부의 몰랐던 과거가 선명하게 드러난다.
+      </p>
+
+      <div class="post-user">
+
+        <div class="post-avatar">
+          🌌
+        </div>
+
+        <span>
+          화려한 개척자_J
+        </span>
+
+        <button>
+          팔로우
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- 2 -->
+    <article class="book-post-card">
+
+      <h3>
+        투명한나선
+      </h3>
+
+      <p>
+        히가시노 게이고의 책을 더이상 못보는게 너무
+        슬프다. 투명한 나선을 읽으며 가장 인상 깊었던
+        점은 우리가 살아가면서 겪는 관계와 선택이었다.
+      </p>
+
+      <div class="post-user">
+
+        <div class="post-avatar">
+          👤
+        </div>
+
+        <span>
+          동네 친구 참깨_74668
+        </span>
+
+        <button>
+          팔로우
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- 3 -->
+    <article class="book-post-card">
+
+      <h3>
+        투명한 나선
+      </h3>
+
+      <p>
+        일본 추리물에는 연작처럼 동일한 등장인물이
+        나오는 경우가 많습니다. 전에 읽었던 히가시노
+        게이고의 이야기와 연결되는 부분도 흥미로웠어요.
+      </p>
+
+      <div class="post-user">
+
+        <div class="post-avatar">
+          📚
+        </div>
+
+        <span>
+          helena38
+        </span>
+
+        <button>
+          팔로우
+        </button>
+
+      </div>
+
+    </article>
+
+
+    <!-- 4 -->
+    <article class="book-post-card">
+
+      <h3>
+        투명한 나선
+      </h3>
+
+      <p>
+        오랫동안 사랑받아 온 시리즈를 다시 만나게 되어
+        반가웠습니다. 이야기를 따라가며 인물들의 관계를
+        생각하게 되는 작품이었어요.
+      </p>
+
+      <div class="post-user">
+
+        <div class="post-avatar">
+          👤
+        </div>
+
+        <span>
+          당근부크
+        </span>
+
+        <button>
+          팔로우
+        </button>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================
+     소설 분야 BEST
+========================= -->
+
+<section class="genre-best-section">
+
+  <div class="detail-section-title">
+
+    <h2>
+      소설 분야 <strong>BEST</strong>
+    </h2>
+
+    <button class="genre-next">
+      〉
+    </button>
+
+  </div>
+
+
+  <div
+    id="genre-best-list"
+    class="genre-best-list"
+  >
+    <!-- JS에서 API 책 생성 -->
+  </div>
+
+</section>
+
+  <!-- =========================
+       기존 스크롤 확인용
+       ⭐ 이건 그대로 유지
+  ========================== -->
+
+</div>
+      <div class="demo-block"></div>
+      <div class="demo-block"></div>
+      <div class="demo-block"></div>
+
+    </div>
+
+
+  </div>
+
+
+
+  <!-- =========================
+       오른쪽 STICKY 책 정보
+  ========================== -->
+
+  <aside class="sticky-book-card">
+
+
+    <div class="sticky-book-info">
+
+      <h2 id="sticky-title">
+        책 제목
+      </h2>
+
+      <p id="sticky-author">
+        저자
+      </p>
+
+
+      <div class="sticky-meta">
+
+        <span class="star">
+          ★
+        </span>
+
+        <span>4.5</span>
+        <span>·</span>
+        <span>북다</span>
+        <span>·</span>
+        <span>소설</span>
+        <span>·</span>
+
+        <span id="sticky-date">
+          2026.07.22
+        </span>
+
+      </div>
+
+
+      <hr>
+
+
+      <h3>
+        도서 타입 선택
+      </h3>
+
+
+      <div class="sticky-book-types">
+
+        <button class="active">
+          📖 전자책
+        </button>
+
+        <button>
+          🎧 오디오북
+        </button>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- 화면 아래에 붙는 버튼 -->
+
+    <div class="sticky-actions">
+
+      <button class="sticky-read">
+        바로 읽기
+      </button>
+
+
+      <div class="sticky-bottom">
+
+        <button class="sticky-heart">
+          ♡
+        </button>
+
+        <button class="sticky-save">
+          ▣ 내서재에 담기
+        </button>
+
+      </div>
+
+    </div>
+
+
+  </aside>
+
+
+</section>
+<script src="./js/common.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="./js/detail.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>밀리의서재</title>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <!-- =========================
+       MAIN
+  ========================== -->
+
+    <main>
+      <!-- =========================
+     MAIN HERO SLIDER
+========================= -->
+
+      <section class="hero-slider">
+        <!-- 움직이는 전체 영역 -->
+        <div class="hero-track" id="hero-track">
+          <!-- JS에서 슬라이드가 들어옴 -->
+        </div>
+
+        <!-- 이전 버튼 -->
+        <button class="hero-arrow hero-prev" id="hero-prev">‹</button>
+
+        <!-- 다음 버튼 -->
+        <button class="hero-arrow hero-next" id="hero-next">›</button>
+
+        <!-- 페이지 -->
+        <div class="hero-page">
+          <span id="current-slide">1</span>
+          /
+          <span id="total-slide">4</span>
+        </div>
+      </section>
+
+      <!-- =========================
+     QUICK MENU
+========================= -->
+
+      <section class="quick-menu">
+        <a href="#" class="quick-item">
+          <div class="quick-icon">📚</div>
+          <p>추천도서</p>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">🎯</div>
+          <p>추천챌린지</p>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">✍️</div>
+          <p>작가모음</p>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">🎉</div>
+          <p>이벤트</p>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">📅</div>
+          <p>공개예정</p>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">💡</div>
+          <p>숨은꿀팁</p>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">✨</div>
+          <p>새로 들어온 책</p>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">🏪</div>
+          <p>서점베스트</p>
+        </a>
+
+        <a href="#" class="quick-item">
+          <div class="quick-icon">▦</div>
+          <p>카테고리</p>
+        </a>
+      </section>
+      <!-- =========================
+     오늘의 인생책
+========================= -->
+
+      <section class="life-book-section">
+        <div class="life-title">
+          <div>
+            <h2>오늘의 인생책</h2>
+            <p>오늘 업데이트된 밀리 회원의 추천</p>
+          </div>
+
+          <a href="#" class="life-more">〉</a>
+        </div>
+
+        <div class="life-book-box">
+          <!-- JS에서 API 데이터가 들어올 자리 -->
+          <div id="life-book-content"></div>
+        </div>
+      </section>
+
+      <!-- =========================
+     밀리가 주목한 책
+========================= -->
+
+      <section class="focus-section">
+        <div class="focus-title">
+          <div>
+            <h2>밀리가 주목한 책</h2>
+            <p>읽고 싶은 모든 것이 모이는 곳</p>
+          </div>
+
+          <a href="#">〉</a>
+        </div>
+
+        <div class="focus-container">
+          <!-- 1 -->
+          <div class="focus-column">
+            <div class="focus-banner focus-banner1">
+              <span>트렌드</span>
+
+              <h3>
+                지금 가장 사랑받는<br />
+                독서 콘텐츠는?
+              </h3>
+            </div>
+
+            <div class="mini-books" id="focus-books-1"></div>
+          </div>
+
+          <!-- 2 -->
+          <div class="focus-column">
+            <div class="focus-banner focus-banner2">
+              <span>기획전</span>
+
+              <h3>
+                아직 아무도 몰라요!<br />
+                지금 뜨는 신간
+              </h3>
+            </div>
+
+            <div class="mini-books" id="focus-books-2"></div>
+          </div>
+
+          <!-- 3 -->
+          <div class="focus-column">
+            <div class="focus-banner focus-banner3">
+              <span>기획전</span>
+
+              <h3>
+                한 번 시작하면<br />
+                멈출 수 없는 이야기
+              </h3>
+            </div>
+
+            <div class="mini-books" id="focus-books-3"></div>
+          </div>
+
+          <!-- 4 -->
+          <div class="focus-column">
+            <div class="focus-banner focus-banner4">
+              <span>오늘의 발견</span>
+
+              <h3>
+                나를 성장시키는<br />
+                오늘의 한 권
+              </h3>
+            </div>
+
+            <div class="mini-books" id="focus-books-4"></div>
+          </div>
+
+          <!-- 5 -->
+          <div class="focus-column">
+            <div class="focus-banner focus-banner5">
+              <span>올타임 레전드</span>
+
+              <h3>
+                오래도록 사랑받는<br />
+                고전 이야기
+              </h3>
+            </div>
+
+            <div class="mini-books" id="focus-books-5"></div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================
+     밀리 랭킹
+========================= -->
+
+      <section class="ranking-section">
+        <div class="ranking-title">
+          <div class="ranking-heading">
+            <h2>밀리 랭킹</h2>
+            <span>서점 베스트</span>
+          </div>
+
+          <a href="#" class="ranking-more">〉</a>
+        </div>
+
+        <!-- 카테고리 -->
+        <div class="ranking-category">
+          <button class="ranking-tab active" data-query="종합">종합</button>
+
+          <button class="ranking-tab" data-query="소설">소설</button>
+
+          <button class="ranking-tab" data-query="경제경영">경제경영</button>
+
+          <button class="ranking-tab" data-query="자기계발">자기계발</button>
+
+          <button class="ranking-tab" data-query="에세이">에세이/시</button>
+
+          <button class="ranking-tab" data-query="인문학">인문/교양</button>
+
+          <button class="ranking-tab" data-query="취미">취미/실용</button>
+
+          <button class="ranking-tab" data-query="청소년">어린이/청소년</button>
+        </div>
+
+        <!-- 일간 / 날짜 -->
+
+        <div class="ranking-info">
+          <span>일간⌄</span>
+
+          <span id="ranking-date"></span>
+        </div>
+
+        <!-- API 책 목록 -->
+
+        <div id="ranking-list" class="ranking-list"></div>
+
+        <button class="ranking-bottom-btn">밀리 랭킹 더보기</button>
+      </section>
+
+      <!-- =========================
+     요즘 책 뭐 봄?
+========================= -->
+
+      <section class="editor-section">
+        <div class="editor-title">
+          <div>
+            <h2>요즘 책 뭐 봄?</h2>
+            <p>밀리 에디터들의 책 이야기</p>
+          </div>
+
+          <button id="editor-next" class="editor-next">〉</button>
+        </div>
+
+        <div class="editor-container" id="editor-container">
+          <!-- JS에서 카드 생성 -->
+        </div>
+      </section>
+
+      <!-- =========================
+     새로 들어온 책
+========================= -->
+
+      <section class="newbook-section">
+        <div class="newbook-title">
+          <div>
+            <h2>따끈따끈, 새로 들어온 책</h2>
+            <p>기다리던 책, 바로 만나보세요</p>
+          </div>
+
+          <a href="#" class="newbook-more">〉</a>
+        </div>
+
+        <!-- 카테고리 -->
+
+        <div class="newbook-tabs">
+          <button class="newbook-tab active" data-query="책">종합</button>
+
+          <button class="newbook-tab" data-query="소설">소설</button>
+
+          <button class="newbook-tab" data-query="경제경영">경제/경영</button>
+
+          <button class="newbook-tab" data-query="자기계발">자기계발</button>
+
+          <button class="newbook-tab" data-query="에세이">에세이/시</button>
+
+          <button class="newbook-tab" data-query="인문">인문/교양</button>
+
+          <button class="newbook-tab" data-query="취미">취미/실용</button>
+
+          <button class="newbook-tab" data-query="청소년">어린이/청소년</button>
+
+          <button class="newbook-tab" data-query="매거진">매거진</button>
+        </div>
+
+        <!-- 책 들어오는 곳 -->
+
+        <div id="newbook-list" class="newbook-list"></div>
+      </section>
+      <!-- =========================
+     커밍순
+========================= -->
+
+      <section class="coming-section">
+        <div class="coming-title">
+          <div>
+            <h2>커밍순! 곧 만나요</h2>
+            <p>알림 신청하고 오픈 소식 먼저 받기</p>
+          </div>
+
+          <div class="coming-arrows">
+            <button id="coming-prev" class="coming-arrow">‹</button>
+
+            <button id="coming-next" class="coming-arrow">›</button>
+          </div>
+        </div>
+
+        <div class="coming-slider">
+          <div id="coming-track" class="coming-track">
+            <!-- JS에서 카드 생성 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     AI와 함께 읽기
+========================= -->
+
+      <section class="ai-section">
+        <div class="ai-title">
+          <div>
+            <h2>AI와 함께 읽는 나를 일으킬 책들</h2>
+            <p>책의 핵심 정보만 쏙쏙 찾아주는 AI 독파밍</p>
+          </div>
+
+          <button id="ai-next" class="ai-next">〉</button>
+        </div>
+
+        <div class="ai-slider">
+          <div id="ai-track" class="ai-track">
+            <!-- JS에서 생성 -->
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+     ORIGINAL POST
+========================= -->
+
+      <section class="original-section">
+        <a href="#" class="original-card">
+          <p class="original-small">새로운 포스트가 궁금하다면?</p>
+
+          <h3>상대의 기분 살피느라 지친 당신에게!</h3>
+
+          <div class="original-brand">
+            <span class="original-icon"> m </span>
+
+            <span> millie ORIGINAL </span>
+          </div>
+        </a>
+      </section>
+      <!-- =========================
+     놓치기 아쉬운 소식
+========================= -->
+
+      <section class="event-section">
+        <h2>놓치기 아쉬운 소식!</h2>
+
+        <div class="event-slider">
+          <div class="event-window">
+            <div class="event-track" id="event-track">
+              <!-- 1 -->
+              <div class="event-card event-pink">
+                <div class="event-text">
+                  <h3>
+                    책에 몰입하는 즐거움<br />
+                    듣는 독서 이벤트
+                  </h3>
+
+                  <p>재미있는 소설 듣고 배지 받아가세요</p>
+                </div>
+
+                <div class="event-decoration">듣는독서</div>
+              </div>
+
+              <!-- 2 -->
+              <div class="event-card event-purple">
+                <div class="event-text">
+                  <h3>
+                    공개 예정 도서<br />
+                    보러 가기
+                  </h3>
+
+                  <p>매주 금요일 신간 공개!</p>
+                </div>
+
+                <div class="event-decoration">D-1</div>
+              </div>
+
+              <!-- 3 -->
+              <div class="event-card event-blue">
+                <div class="event-text">
+                  <h3>
+                    별점이 빛나는<br />
+                    오늘의 추천책
+                  </h3>
+
+                  <p>독자들이 사랑한 책을 만나보세요</p>
+                </div>
+
+                <div class="event-decoration">★</div>
+              </div>
+
+              <!-- 4 -->
+              <div class="event-card event-yellow">
+                <div class="event-text">
+                  <h3>
+                    10초면 참여 완료!<br />
+                    오늘의 이벤트
+                  </h3>
+
+                  <p>지금 참여하고 특별한 혜택 받기</p>
+                </div>
+
+                <div class="event-decoration">EVENT</div>
+              </div>
+
+              <!-- 5 -->
+              <div class="event-card event-green">
+                <div class="event-text">
+                  <h3>
+                    이번 주 독서<br />
+                    챌린지 시작!
+                  </h3>
+
+                  <p>책과 함께 새로운 습관 만들기</p>
+                </div>
+
+                <div class="event-decoration">GO!</div>
+              </div>
+
+              <!-- 6 -->
+              <div class="event-card event-orange">
+                <div class="event-text">
+                  <h3>
+                    에디터가 고른<br />
+                    이달의 책
+                  </h3>
+
+                  <p>놓치기 아쉬운 한 권을 만나보세요</p>
+                </div>
+
+                <div class="event-decoration">PICK</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 화살표 -->
+
+          <button type="button" class="event-arrow event-prev" id="event-prev">
+            ‹
+          </button>
+
+          <button type="button" class="event-arrow event-next" id="event-next">
+            ›
+          </button>
+        </div>
+
+        <!-- 아래 점 -->
+        <div class="event-dots" id="event-dots"></div>
+      </section>
+
+      <div id="footer"></div>
+    </main>
+
+    <script src="./js/common.js"></script>
+    <script src="./js/api.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
