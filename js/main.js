@@ -15,6 +15,11 @@ document.addEventListener("click", function (event) {
     return;
   }
 
+  // 로고는 메인페이지로 이동
+  if (event.target.closest(".logo")) {
+    return;
+  }
+
   // 실제 책을 클릭한 경우
   const book = event.target.closest("[data-book-title]");
 
