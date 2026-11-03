@@ -1,13 +1,11 @@
 <table>
   <tr>
-    <td width="120" align="center" valign="middle"><img src="img/logo.png" width="96" alt="밀리의서재 로고"></td>
-    <td valign="middle">
-      <h2>밀리의서재 클론</h2>
-      도서 구독 서비스 밀리의서재의 <b>메인 · 상세 페이지</b>를 HTML · CSS · JavaScript로 따라 만든 퍼블리싱 연습 프로젝트<br>
-      책 정보는 <b>카카오 책 검색 API</b>로 불러와 실제 데이터로 표시
-    </td>
+    <td width="72" align="center" valign="middle"><img src="img/logo.png" width="56" alt="밀리의서재 로고"></td>
+    <td valign="middle"><b>밀리의서재 클론</b> — 도서 구독 서비스 밀리의서재의 <b>메인 · 상세 페이지</b>를 HTML · CSS · JavaScript로 따라 만든 퍼블리싱 연습 프로젝트</td>
   </tr>
 </table>
+
+![메인 화면](docs/main.jpg)
 
 <table>
   <tr><th align="left" width="130">기간</th><td>2026.08</td></tr>
@@ -32,8 +30,6 @@
 <a name="s1"></a>
 
 ## 1. 메인 페이지
-
-![메인 화면](docs/main.jpg)
 
 <details>
 <summary><b>홈 화면 전체 보기 (펼치기)</b></summary>
