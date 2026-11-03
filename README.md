@@ -58,16 +58,9 @@
 
 ## 2. 상세 페이지
 
-![상세 화면](docs/detail.jpg)
-
-<details>
-<summary><b>상세 페이지 전체 보기 (펼치기 · 스크롤 영상)</b></summary>
-
 <img src="docs/detail-scroll.gif" width="100%" alt="상세 페이지를 스크롤하면 오른쪽 책 정보가 따라오는 화면">
 
 <sub>위에서 아래로 스크롤 — 본문이 시작되면 오른쪽에 책 정보 카드가 나타나 따라옴</sub>
-
-</details>
 
 **책을 누르면 그 책의 상세 페이지로 이동**
 
