@@ -1,5 +1,3 @@
-# 밀리의서재 클론 — 현정현
-
 ![메인 화면](docs/main.jpg)
 
 > 도서 구독 서비스 밀리의서재의 메인 · 상세 페이지를 HTML · CSS · JavaScript로 따라 만든 퍼블리싱 연습 프로젝트
@@ -28,10 +26,14 @@
 
 ## 1. 메인 페이지
 
-<table>
-  <tr>
-    <td width="45%" valign="top"><img src="docs/home-full.jpg" width="100%" alt="메인 페이지 전체"></td>
-    <td valign="top">
+![메인 화면](docs/main.jpg)
+
+<details>
+<summary><b>홈 화면 전체 보기 (펼치기)</b></summary>
+
+<img src="docs/home-full.jpg" width="100%" alt="메인 페이지 전체">
+
+</details>
 
 **11개 섹션으로 구성한 홈 화면**
 
@@ -49,39 +51,34 @@
 | 오리지널 | 밀리 오리지널 콘텐츠 |
 | 이벤트 | 배너 6개 · 한 화면 2개 · 자동 슬라이드 + 점 이동 |
 
-</td>
-  </tr>
-</table>
-
 ---
 
 <a name="s2"></a>
 
 ## 2. 상세 페이지
 
-<table>
-  <tr>
-    <td width="45%" valign="top"><img src="docs/detail-full.jpg" width="100%" alt="상세 페이지 전체"></td>
-    <td valign="top">
+![상세 화면](docs/detail.jpg)
+
+<details>
+<summary><b>상세 페이지 전체 보기 (펼치기)</b></summary>
+
+<img src="docs/detail-full.jpg" width="100%" alt="상세 페이지 전체">
+
+</details>
 
 **책을 누르면 그 책의 상세 페이지로 이동**
 
 - 책 표지 · 제목 · 저자 · 별점 · 출간일 — 카카오 책 검색 API 결과로 채움
 - 성별 · 연령별 인기 분포, 밀리 완독지수
 - 책 소개 · 목차 · 저자 소개 · 출판사 서평 · 책 정보
-- 한 줄 리뷰 목록
-- 소설 분야 BEST
+- 한 줄 리뷰 목록 · 소설 분야 BEST
 - 탭(책 추천 · 책 소개 · 리뷰)을 누르면 해당 위치로 스크롤
 
 **스크롤하면 오른쪽에 따라오는 책 정보**
 
-<img src="docs/sticky-card.png" width="180" alt="스크롤 시 나타나는 책 정보 카드">
+<img src="docs/sticky-card.png" width="220" alt="스크롤 시 나타나는 책 정보 카드">
 
 본문이 시작되는 위치를 지나면 오른쪽에 책 정보 · 바로 읽기 · 내서재에 담기 카드가 나타나고 화면에 고정
-
-</td>
-  </tr>
-</table>
 
 ---
 
