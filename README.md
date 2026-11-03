@@ -1,6 +1,13 @@
-![메인 화면](docs/main.jpg)
-
-> 도서 구독 서비스 밀리의서재의 메인 · 상세 페이지를 HTML · CSS · JavaScript로 따라 만든 퍼블리싱 연습 프로젝트
+<table>
+  <tr>
+    <td width="120" align="center" valign="middle"><img src="img/logo.png" width="96" alt="밀리의서재 로고"></td>
+    <td valign="middle">
+      <h2>밀리의서재 클론</h2>
+      도서 구독 서비스 밀리의서재의 <b>메인 · 상세 페이지</b>를 HTML · CSS · JavaScript로 따라 만든 퍼블리싱 연습 프로젝트<br>
+      책 정보는 <b>카카오 책 검색 API</b>로 불러와 실제 데이터로 표시
+    </td>
+  </tr>
+</table>
 
 <table>
   <tr><th align="left" width="130">기간</th><td>2026.08</td></tr>
