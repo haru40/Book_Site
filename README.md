@@ -1,7 +1,7 @@
 <table>
   <tr>
     <td width="72" align="center" valign="middle"><img src="img/logo.png" width="56" alt="밀리의서재 로고"></td>
-    <td valign="middle"><b>밀리의서재 클론</b> — 도서 구독 서비스 밀리의서재의 <b>메인 · 상세 페이지</b>를 HTML · CSS · JavaScript로 따라 만든 퍼블리싱 연습 프로젝트</td>
+    <td valign="middle"><b>밀리의서재 클론</b><br>도서 구독 서비스 밀리의서재의 <b>메인 · 상세 페이지</b>를 HTML · CSS · JavaScript로 따라 만든 퍼블리싱 연습 프로젝트</td>
   </tr>
 </table>
 
@@ -19,11 +19,9 @@
 
 ## 목차
 
-<table>
-  <tr><th align="left" width="90">화면</th><td><a href="#s1">1. 메인 페이지</a> · <a href="#s2">2. 상세 페이지</a></td></tr>
-  <tr><th align="left">구현</th><td><a href="#s3">3. 주요 기능</a> · <a href="#s4">4. 책 데이터 연동</a></td></tr>
-  <tr><th align="left">구조</th><td><a href="#s5">5. 프로젝트 구조</a></td></tr>
-</table>
+- **화면** — [1. 메인 페이지](#s1) · [2. 상세 페이지](#s2)
+- **구현** — [3. 주요 기능](#s3) · [4. 책 데이터 연동](#s4)
+- **구조** — [5. 프로젝트 구조](#s5)
 
 ---
 
