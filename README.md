@@ -1,7 +1,7 @@
 <table>
   <tr>
     <td width="72" align="center" valign="middle"><img src="img/logo.png" width="56" alt="밀리의서재 로고"></td>
-    <td valign="middle"><b>밀리의서재 클론</b><br>도서 구독 서비스 밀리의서재의 <b>메인 · 상세 페이지</b>를 HTML · CSS · JavaScript로 따라 만든 퍼블리싱 연습 프로젝트</td>
+    <td valign="middle"><b>밀리의서재 클론</b><br>도서 구독 서비스 밀리의서재의 <b>메인 · 상세 페이지</b>를 HTML · CSS · JavaScript로 따라 만든 퍼블리싱 프로젝트</td>
   </tr>
 </table>
 
@@ -61,9 +61,11 @@
 ![상세 화면](docs/detail.jpg)
 
 <details>
-<summary><b>상세 페이지 전체 보기 (펼치기)</b></summary>
+<summary><b>상세 페이지 전체 보기 (펼치기 · 스크롤 영상)</b></summary>
 
-<img src="docs/detail-full.jpg" width="100%" alt="상세 페이지 전체">
+<img src="docs/detail-scroll.gif" width="100%" alt="상세 페이지를 스크롤하면 오른쪽 책 정보가 따라오는 화면">
+
+<sub>위에서 아래로 스크롤 — 본문이 시작되면 오른쪽에 책 정보 카드가 나타나 따라옴</sub>
 
 </details>
 
